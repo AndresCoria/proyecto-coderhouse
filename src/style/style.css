@@ -1,0 +1,391 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* fonts google */
+/* fonts google */
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Kalam&display=swap');
+
+body {
+    background-color: aliceblue;
+}
+
+
+/* inicio del header */
+
+
+.logo {
+    margin: auto;
+    text-align: center;
+    background-color: rgb(23, 23, 23);
+}
+
+.nav-header {
+    text-align: center;
+    display: block;
+    background-color: rgba(23, 23, 23, 0.025);
+}
+
+.li-header {
+    display: inline-block;
+}
+
+.a-header {
+    color: rgb(227, 170, 170);
+    font-weight: bold;
+    padding: 0.5rem 1rem;    
+    font-family: 'Fuzzy Bubbles', cursive;
+    display: block;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.a-header:hover {
+    background-color: rgba(221, 215, 209, 0.964);
+}
+/* fin del header */
+
+                                            /* Comienzo de los sections */
+            /* Inicio de primer-seccion */
+
+
+.primer-seccion {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.img-uno-carusel, .img-dos-carusel, .img-tres-carusel {
+    width: 19%;
+    height: 250px;
+}
+
+.h1-home{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    line-height: 1.7em;
+    font-family: 'Fuzzy Bubbles', cursive;
+    padding: 0.1em;
+    margin: 0.5em;
+}
+
+            /* Fin primera seccion */
+
+            /* Comienzo de segunda seccion */
+
+
+.segunda-seccion {
+    text-align: center;
+}
+
+.h2-primero, .h2-segundo {
+    text-decoration: underline;
+    font-size: 1.5rem;
+    line-height: 1.7em;
+    font-family: 'Fuzzy Bubbles', cursive;
+    padding: 0.1em;
+    display: inline-block;
+    background-color: rgba(23, 23, 23, 0.025);
+}
+
+
+.segundo-div {
+    text-align: center;
+    display: block;
+}
+
+.parrafo-uno-segunda-seccion, .parrafo-dos-segunda-seccion, 
+.parrafo-tres-segunda-seccion, .parrafo-cuarto-segunda-seccion {
+    display: inline-block;
+    margin: 1em 10em 2em 10em;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 1rem;
+}
+
+
+            /* Fin de segunda seccion */
+
+            /* Inicio del Footer */
+
+footer {
+    text-decoration: none;
+    background-color: rgb(159, 151, 151);
+    border-top: 1px solid black;
+}
+
+.seccion-uno-footer {
+    display: inline-block;
+    width: 33%;
+    /* margin-left: 5%; */
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+}
+
+.prueba {
+    display: inline-block;
+}
+
+.parrafo-uno-footer {
+    text-decoration: none;
+    
+}
+
+.primer-div-footer {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.primer-ul-footer {
+    display: inline;
+}
+
+.primer-li-footer {
+    display: inline;
+    text-decoration: none;
+    padding: 1px;
+    margin: 1px;
+}
+
+.segundo-li-footer {
+    display: inline;
+    padding: 1px;
+    margin: 1px;
+}
+
+
+/* -----------------------------SECCION DOS----------------------------------------------- */
+
+
+.seccion-dos-footer {
+    display: inline-block;
+    /* text-align: center; */
+    /* margin-left: 15%; */
+    width: 33%;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+}
+.parrafo-dos-footer {
+    display: inline-block;
+}
+
+form, input {
+    display: inline-block;
+}
+
+/* -------------------------------SECCION TRES------------------------------------------------- */
+
+.seccion-tres-footer {
+    display: inline-block;
+    width: 33%;
+    text-align: right;
+    position: relative;
+    left: 150px;
+}
+
+.segundo-ul-footer {
+    display: block;
+    width: 90px;
+}
+
+.tercer-li-footer, .a-footer {
+    display: block;
+}
+
+.a-footer {
+    color: rgb(227, 170, 170);
+    font-weight: bold;
+    padding: 0.2rem 0.2rem;    
+    font-family: 'Fuzzy Bubbles', cursive;
+    display: block;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.a-footer:hover {
+    background-color: black;
+}
+
+            /* Fin del Footer */
+
+
+/* ----------------------------- Productos.html ----------------------------------- */
+
+.seccion-uno-productos {
+    width: 80%;
+    text-align: justify;
+    margin: 20px auto;
+}
+
+.seccion-dos-productos {
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.h1-productos {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0.5em;
+}
+
+.parrafo-uno-seccion-uno, .parrafo-dos-seccion-uno, .parrafo-descripcion {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 1rem;
+    line-height: 1.4em;
+}
+
+.parrafo-descripcion {
+    padding: 5px;
+    margin: 10px auto 10px auto;
+}
+
+/* ---------------------------------- Fin Productos.html ------------------------- */
+
+/* ---------------------------------- Inicio Contacto.html ------------------------- */
+
+
+.h1-contacto {
+    text-align: center;
+    padding: 5px;
+    margin: 20px 0 20px 0;
+    text-decoration: underline;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.div-contacto {
+    width: 20%;
+    margin: auto;
+}
+
+.input, .textarea-uno {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.textarea-uno {
+    padding-bottom: 40%;
+}
+
+.input-cuatro {
+    display: block;
+    margin: 0 auto;
+}
+
+.seccion-tres-contacto {
+    width: 75%;
+    margin: auto;
+}
+
+.div-dos-seccion-tres {
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.h2-contacto {
+    text-align: center;
+    width: 100%;
+    padding: 2% 0;
+    margin: 2% 0;
+}
+
+/* ---------------------------------- Fin contacto.html ------------------------- */
+
+/* ---------------------------------- Inicio de sucursales.html ------------------------ */
+
+.seccion-uno-sucursales {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+.img-uno-carusel, .img-dos-carusel, .img-tres-carusel {
+    width: 19%;
+    height: 250px;
+}
+
+
+
+/* .seccion-dos-sucursales {
+    text-align: center;
+    font-family: 'Fuzzy Bubbles', cursive;
+    text-decoration: underline;
+    padding: 1%;
+    margin: 1%;
+} */
+
+.primer-div {
+    padding: 1%;
+}
+.parrafo-sucursales {
+    padding: 1%;
+    margin: 1%;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.seccion-dos-sucursales {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.h1-sucursales {
+    text-align: center;
+    font-family: 'Fuzzy Bubbles', cursive;
+    text-decoration: underline;
+    padding: 1%;
+    margin: 1%;
+}
+/* ---------------------------------- Fin de sucursales.html ------------------------ */
+
+/* ---------------------------------- Inicio de Nosotros.html ------------------------ */
+.seccion-uno-nosotros {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+.img-uno-carusel, .img-dos-carusel, .img-tres-carusel {
+    width: 19%;
+    height: 250px;
+}
+
+
+
+.seccion-dos-nosotros {
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.h1-nosotros {
+    text-align: center;
+    text-decoration: underline;
+    padding: 1%;
+}
+
+.parrafo-nosotros-uno, .parrafo-nosotros-dos, .parrafo-nosotros-tres {
+    font-size: 1em;
+    padding: 1%;
+    margin: 1%;
+    line-height: 1.2em;
+}
+
+.img-uno, .img-dos, .img-tres {
+    width: 19%;
+    height: 250px;
+    padding: 7%;
+    margin: auto;
+}
+/* ---------------------------------- Fin de Nosotros.html ------------------------ */
+
