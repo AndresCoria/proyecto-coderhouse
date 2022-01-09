@@ -4,7 +4,6 @@
 }
 
 /* fonts google */
-/* fonts google */
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Kalam&display=swap');
 
@@ -12,255 +11,358 @@ body {
     background-color: aliceblue;
 }
 
-
 /* inicio del header */
 
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(203, 172, 141);
+}
+.logo, .div-logo-dos {
+    background-color: rgb(203, 172, 141);
+}
 
-.logo {
-    margin: auto;
-    text-align: center;
-    background-color: rgb(23, 23, 23);
+.img-logo, .img-logo-dos {
+    background-color: rgba(203, 172, 141, );
+    width: 150px;
+    height: 150px;
 }
 
 .nav-header {
-    text-align: center;
-    display: block;
-    background-color: rgba(23, 23, 23, 0.025);
+    align-self: center;
 }
 
-.li-header {
-    display: inline-block;
+.input-header, label {
+    display: none;
+}
+
+.ul-header {
+    display: flex;
+    list-style: none;
 }
 
 .a-header {
-    color: rgb(227, 170, 170);
+    font-size: 1.2em;
+    color: #d13c3c;
     font-weight: bold;
-    padding: 0.5rem 1rem;    
-    font-family: 'Fuzzy Bubbles', cursive;
-    display: block;
-    transition: all 0.4s linear;
-    border-radius: 5px;
+    padding: 0.7rem 1rem;    
+    font-family:'Fuzzy Bubbles', Times, serif;
+    transition: all 0.8s linear;
+    border-radius: 10px;
     text-decoration: none;
 }
 .a-header:hover {
     background-color: rgba(221, 215, 209, 0.964);
 }
-/* fin del header */
-
-                                            /* Comienzo de los sections */
-            /* Inicio de primer-seccion */
-
-
-.primer-seccion {
-    text-align: center;
-    padding: 5px;
-    margin: 5px;
+/* -------------media query tablet------------- */
+@media only screen and (max-width: 768px) {
+    .div-logo-dos {
+        display: none;
+    }
+    .ul-header {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
 }
 
-.img-uno-carusel, .img-dos-carusel, .img-tres-carusel {
+/* -------------media query mobile------------- */
+@media only screen and (max-width: 480px) {
+    .ul-header {
+        display: none;
+        list-style: none;
+        gap: 10px;
+    }
+    .div-logo-dos {
+        display: none;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-header {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 70px;
+        padding: 10px;
+    }
+    .input-header:checked  ~ .ul-header, label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+    }
+    .input-header {
+        display: none;
+    }
+}
+
+
+/* fin del header */
+
+            /* Inicio de primer-seccion */
+
+/* ---------------------Inicio carousel------------ */
+
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+    object-fit: cover;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+.img-uno-carusel, .img-dos-carusel, .img-tres-carusel,
+.img-cuatro-carusel {
     width: 19%;
     height: 250px;
 }
 
+/* ------------------------fin carousel--------- */
+
 .h1-home{
     text-align: center;
-    text-decoration: underline;
-    font-size: 1.5rem;
-    line-height: 1.7em;
-    font-family: 'Fuzzy Bubbles', cursive;
-    padding: 0.1em;
-    margin: 0.5em;
+    font-size: 30px;
+    margin: 2px 35px;
+    padding: 10px 12px;
+    font-family:'Fuzzy Bubbles', Times, serif;
+    background-color: rosybrown;
 }
 
             /* Fin primera seccion */
 
             /* Comienzo de segunda seccion */
 
-
-.segunda-seccion {
-    text-align: center;
+.primer-div {
+    display: flex;
+    justify-content: center;
 }
 
 .h2-primero, .h2-segundo {
     text-decoration: underline;
-    font-size: 1.5rem;
-    line-height: 1.7em;
-    font-family: 'Fuzzy Bubbles', cursive;
-    padding: 0.1em;
+    font-size: 30px;
+    font-family:'Fuzzy Bubbles', Times, serif;
     display: inline-block;
     background-color: rgba(23, 23, 23, 0.025);
-}
-
-
-.segundo-div {
     text-align: center;
-    display: block;
 }
+
+.segundo-div, .tercer-div, .cuarto-div, .quinto-div {
+    display: flex;
+    justify-content: center;
+}
+
 
 .parrafo-uno-segunda-seccion, .parrafo-dos-segunda-seccion, 
 .parrafo-tres-segunda-seccion, .parrafo-cuarto-segunda-seccion {
-    display: inline-block;
-    margin: 1em 10em 2em 10em;
-    font-family: 'Fuzzy Bubbles', cursive;
-    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    font-family:'Fuzzy Bubbles', Times, serif;
+    font-size: 20px;
+    margin: 5px 0;
+    padding: 12px;
 }
-
 
             /* Fin de segunda seccion */
 
             /* Inicio del Footer */
 
 footer {
-    text-decoration: none;
+    display: grid;
+    grid-template-areas: 'redes newsletter index';
+    
     background-color: rgb(159, 151, 151);
     border-top: 1px solid black;
 }
 
 .seccion-uno-footer {
-    display: inline-block;
-    width: 33%;
-    /* margin-left: 5%; */
-    text-align: center;
-    position: relative;
-    bottom: 50px;
+    grid-area: redes;
+    align-self: center;
 }
 
-.prueba {
-    display: inline-block;
+.div-uno-footer {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
 }
 
-.parrafo-uno-footer {
-    text-decoration: none;
-    
+.div-dos-footer{
+    display: flex;
+    justify-content: center;
 }
 
-.primer-div-footer {
-    display: inline-block;
-    text-decoration: none;
+@media screen and (max-width: 768px) {
+    footer {
+        display: grid;
+        grid-template-areas: 
+        'redes'
+        'newsletter'
+        'index';
+        background-color: rgb(159, 151, 151);
+        padding: 10px;
+        gap: 10px;
+    }
+    .div-uno-footer {
+        display: flex;
+        justify-content: center;
+        gap: 75px;
+    }
+    .ul-footer {
+        display: none;
+    }
+    .div-tres-footer p {
+        margin: 10px;
+    }
 }
-
-.primer-ul-footer {
-    display: inline;
-}
-
-.primer-li-footer {
-    display: inline;
-    text-decoration: none;
-    padding: 1px;
-    margin: 1px;
-}
-
-.segundo-li-footer {
-    display: inline;
-    padding: 1px;
-    margin: 1px;
-}
-
-
 /* -----------------------------SECCION DOS----------------------------------------------- */
 
-
 .seccion-dos-footer {
-    display: inline-block;
-    /* text-align: center; */
-    /* margin-left: 15%; */
-    width: 33%;
-    text-align: center;
-    position: relative;
-    bottom: 50px;
-}
-.parrafo-dos-footer {
-    display: inline-block;
+    grid-area: newsletter;
+    align-self: center;
 }
 
-form, input {
-    display: inline-block;
+.div-tres-footer {
+    display: flex;
+    justify-content: center;
 }
 
 /* -------------------------------SECCION TRES------------------------------------------------- */
 
 .seccion-tres-footer {
-    display: inline-block;
-    width: 33%;
-    text-align: right;
-    position: relative;
-    left: 150px;
+    grid-area: index;
+    display: flex;
+    justify-content: center;
 }
 
-.segundo-ul-footer {
-    display: block;
-    width: 90px;
-}
-
-.tercer-li-footer, .a-footer {
-    display: block;
+.ul-footer {
+    width: 100px;
+    list-style: none;
 }
 
 .a-footer {
     color: rgb(227, 170, 170);
     font-weight: bold;
     padding: 0.2rem 0.2rem;    
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family:'Fuzzy Bubbles', Times, serif;
     display: block;
-    transition: all 0.4s linear;
-    border-radius: 5px;
     text-decoration: none;
 }
 
-.a-footer:hover {
-    background-color: black;
-}
-
-            /* Fin del Footer */
-
-
-/* ----------------------------- Productos.html ----------------------------------- */
+/* ------------------------------Fin del Footer--------------------------- */
+/* ------------------------------Fin del index----------------------------- */
+/* ----------------------------- Inicio de Productos.html ----------------------------------- */
 
 .seccion-uno-productos {
-    width: 80%;
-    text-align: justify;
+    /* display: flex;
+    justify-content: center; */
     margin: 20px auto;
 }
 
 .seccion-dos-productos {
-    width: 80%;
-    text-align: center;
+    width: 100%;
     margin: 20px auto;
 }
 
 .h1-productos {
-    font-family: 'Fuzzy Bubbles', cursive;
+    display: flex;
+    justify-content: center;
+    font-family:'Fuzzy Bubbles', Times, serif;
     font-size: 1.5rem;
     text-align: center;
     margin: 0.5em;
 }
 
+.div-productos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img-productos {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+}
+
+.parrafo-uno-seccion-uno, .parrafo-dos-seccion-uno {
+    margin: auto 15px;
+}
+
 .parrafo-uno-seccion-uno, .parrafo-dos-seccion-uno, .parrafo-descripcion {
-    font-family: 'Fuzzy Bubbles', cursive;
+    display: flex;
+    justify-content: center;
+    font-family:'Fuzzy Bubbles', Times, serif;
     font-size: 1rem;
     line-height: 1.4em;
 }
 
 .parrafo-descripcion {
-    padding: 5px;
+    padding: 10px 12px;
     margin: 10px auto 10px auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .img-productos {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
 }
 
 /* ---------------------------------- Fin Productos.html ------------------------- */
 
 /* ---------------------------------- Inicio Contacto.html ------------------------- */
 
-
+.seccion-uno-contacto {
+    display: flex;
+    justify-content: center;
+}
 .h1-contacto {
-    text-align: center;
     padding: 5px;
     margin: 20px 0 20px 0;
     text-decoration: underline;
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family:'Fuzzy Bubbles', Times, serif;
+    font-size: 1.5em;
 }
 
+
 .div-contacto {
-    width: 20%;
+    display: flex;
+    justify-content: center;
+    width: 300px;
     margin: auto;
 }
 
@@ -274,7 +376,8 @@ form, input {
 }
 
 .input-cuatro {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
 }
 
@@ -284,108 +387,215 @@ form, input {
 }
 
 .div-dos-seccion-tres {
-    margin-left: 15%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
 }
 
 .h2-contacto {
-    text-align: center;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family:'Fuzzy Bubbles', Times, serif;
+    font-size: 1.5em;
     padding: 2% 0;
-    margin: 2% 0;
+    margin: 2% 0; 
+}
+
+@media only screen and (max-width: 768px) {
+    .h1-contacto {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .h2-contacto {
+        font-size: 1.2em;
+        text-align: center;
+    }
 }
 
 /* ---------------------------------- Fin contacto.html ------------------------- */
 
 /* ---------------------------------- Inicio de sucursales.html ------------------------ */
 
-.seccion-uno-sucursales {
+/* ---------------------Inicio carousel------------ */
+
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+    object-fit: cover;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+.img-uno-carusel, .img-dos-carusel, .img-tres-carusel,
+.img-cuatro-carusel {
+    width: 23%;
+    height: 250px; 
+    margin: 2px;
+} 
+/* ------------------------fin carousel--------- */
+
+.primer-div-sucursales, .segundo-div-sucursales,
+.tercer-div-sucursales, .cuarto-div-sucursales {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    text-align: center;
-    padding: 5px;
-    margin: 10px;
 }
 
-.img-uno-carusel, .img-dos-carusel, .img-tres-carusel {
-    width: 19%;
-    height: 250px;
+.img-sucursal {
+    width: 43%;
+    object-fit: cover;
 }
 
-
-
-/* .seccion-dos-sucursales {
+.div-parrafos-sucursales {
     text-align: center;
-    font-family: 'Fuzzy Bubbles', cursive;
-    text-decoration: underline;
-    padding: 1%;
-    margin: 1%;
-} */
-
-.primer-div {
-    padding: 1%;
 }
 .parrafo-sucursales {
-    padding: 1%;
+    padding: 10px 12px;
     margin: 1%;
-    font-family: 'Fuzzy Bubbles', cursive;
-}
-
-.seccion-dos-sucursales {
-    width: 80%;
-    text-align: center;
-    margin-left: 10%;
+    font-family:'Fuzzy Bubbles', Times, serif;
+    font-size: 1.5em;
 }
 
 .h1-sucursales {
-    text-align: center;
-    font-family: 'Fuzzy Bubbles', cursive;
+    display: flex;
+    justify-content: center;
+    font-family:'Fuzzy Bubbles', Times, serif;
     text-decoration: underline;
     padding: 1%;
     margin: 1%;
+}
+
+@media only screen and (max-width: 480px) {
+    .h1-sucursales {
+        font-size: 0.9em;
+    }
+    .parrafo-sucursales {
+        font-size: 1em;
+    }
 }
 /* ---------------------------------- Fin de sucursales.html ------------------------ */
 
 /* ---------------------------------- Inicio de Nosotros.html ------------------------ */
-.seccion-uno-nosotros {
-    width: 100%;
-    text-align: center;
-    padding: 5px;
-    margin: 10px;
+
+/* ---------------------Inicio carousel------------ */
+
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
 }
 
-.img-uno-carusel, .img-dos-carusel, .img-tres-carusel {
-    width: 19%;
-    height: 250px;
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
 }
 
+.slider li {
+	width: 100%;
+	list-style: none;
+}
 
+.slider img {
+	width: 100%;
+    object-fit: cover;
+}
 
-.seccion-dos-nosotros {
-    width: 80%;
-    margin-left: 10%;
-    text-align: left;
-    font-family: 'Fuzzy Bubbles', cursive;
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+.img-uno-carusel, .img-dos-carusel, .img-tres-carusel, 
+.img-cuatro-carusel  {
+    width: 23%;
+    height: 250px; 
+} 
+/* ------------------------fin carousel--------- */
+
+.div-uno-nosotros{
+    display: flex;
+    justify-content: center;
+    
 }
 
 .h1-nosotros {
-    text-align: center;
     text-decoration: underline;
     padding: 1%;
+    font-family:'Fuzzy Bubbles', Times, serif;
 }
 
-.parrafo-nosotros-uno, .parrafo-nosotros-dos, .parrafo-nosotros-tres {
+.parrafo-nosotros-uno, .parrafo-nosotros-dos, 
+.parrafo-nosotros-tres {
     font-size: 1em;
-    padding: 1%;
+    padding: 10px 12px;
     margin: 1%;
     line-height: 1.2em;
+    font-family:'Fuzzy Bubbles', Times, serif;
 }
 
+.seccion-tres-sucursales {
+    display: flex;
+    justify-content: space-around;
+}
 .img-uno, .img-dos, .img-tres {
     width: 19%;
     height: 250px;
-    padding: 7%;
-    margin: auto;
+    margin-bottom: 2%;
 }
-/* ---------------------------------- Fin de Nosotros.html ------------------------ */
 
+@media screen and (max-width: 768px) {
+    .seccion-tres-sucursales {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .img-uno, .img-dos, .img-tres {
+        width: 70%;
+        height: 250px;
+        margin-bottom: 2%;
+    }
+}
+
+/* ---------------------------------- Fin de Nosotros.html ------------------------ */
