@@ -78,7 +78,7 @@ header {
     .ul-header {
         display: none;
         list-style: none;
-        gap: 10px;
+        margin-top: 1em;
     }
     .div-logo-dos {
         display: none;
@@ -109,57 +109,8 @@ header {
 
 /* fin del header */
 
-            /* Inicio de primer-seccion */
+            /* Inicio de secciones index */
 
-/* ---------------------Inicio carousel------------ */
-
-/* borrar despues. carousel hecho con bootstrap */
-
-/* .slider {
-	width: 95%;
-	margin: auto;
-	overflow: hidden;
-}
-
-.slider ul {
-	display: flex;
-	padding: 0;
-	width: 400%;
-	animation: cambio 20s infinite alternate linear;
-}
-
-.slider li {
-	width: 100%;
-	list-style: none;
-}
-
-.slider img {
-	width: 100%;
-    object-fit: cover;
-}
-
-@keyframes cambio {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
-}
-
-.img-uno-carusel, .img-dos-carusel, .img-tres-carusel,
-.img-cuatro-carusel {
-    width: 19%;
-    height: 250px;
-} */
-
-
-/* ------------------------fin carousel--------- */
 .carousel {
     margin: 15px auto;
     padding: 10px auto;
@@ -179,6 +130,15 @@ header {
     width: 100%;
 }
 
+.container-img-dos {
+    display: flex;
+    justify-content: center;
+}
+.image-index-dos {
+    max-width: 50%;
+    max-height: auto;
+}
+
 .parrafo-container {
     display: flex;
     align-items: center;
@@ -188,7 +148,7 @@ header {
 .parrafo-index {
     font-family:'Fuzzy Bubbles', Times, serif;
     font-weight: bolder;
-    font-size: 1.2rem;
+    font-size: 20px;
 }
 
 .parrafo-index-ultimo {
@@ -196,56 +156,11 @@ header {
     padding: 5px;
     font-family:'Fuzzy Bubbles', Times, serif;
     font-weight: bolder;
-    font-size: 1.2rem;
-}
-
-/* .segunda-seccion {
-    margin-top: 15px;
-}
-.h1-home{
-    text-align: center;
-    font-size: 30px;
-    margin: 2px 35px;
-    padding: 10px 12px;
-    font-family:'Fuzzy Bubbles', Times, serif;
-    background-color: rosybrown;
-}
-
-            /* Fin primera seccion */
-
-            /* Comienzo de segunda seccion */
-
-/* .primer-div {
-    display: flex;
-    justify-content: center;
-}
-
-.h2-primero, .h2-segundo {
-    text-decoration: underline;
-    font-size: 30px;
-    font-family:'Fuzzy Bubbles', Times, serif;
-    display: inline-block;
-    background-color: rgba(23, 23, 23, 0.025);
-    text-align: center;
-}
-
-.segundo-div, .tercer-div, .cuarto-div, .quinto-div {
-    display: flex;
-    justify-content: center;
-}
-
-
-.parrafo-uno-segunda-seccion, .parrafo-dos-segunda-seccion,
-.parrafo-tres-segunda-seccion, .parrafo-cuarto-segunda-seccion {
-    display: flex;
-    justify-content: center;
-    font-family:'Fuzzy Bubbles', Times, serif;
     font-size: 20px;
-    margin: 5px 0;
-    padding: 12px;
-} */
+}
 
-            /* Fin de segunda seccion */
+
+            /* Fin de secciones index */
 
             /* Inicio del Footer */
 
