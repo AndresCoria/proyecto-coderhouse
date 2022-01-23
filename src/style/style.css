@@ -45,14 +45,20 @@ header {
     font-size: 1.2em;
     color: #d13c3c;
     font-weight: bold;
-    padding: 0.7rem 1rem;    
+    padding: 0.7rem 1rem;
     font-family:'Fuzzy Bubbles', Times, serif;
     transition: all 0.8s linear;
     border-radius: 10px;
     text-decoration: none;
 }
+
 .a-header:hover {
+    color: blue;
     background-color: rgba(221, 215, 209, 0.964);
+    text-decoration: underline;
+    transform: translate(6px, 5%);
+    transition: all 1s;
+    box-shadow: 14px 10px 5px 0px rgba(0,0,0,0.75);
 }
 /* -------------media query tablet------------- */
 @media only screen and (max-width: 768px) {
