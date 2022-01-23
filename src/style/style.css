@@ -8,8 +8,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Kalam&display=swap');
 
 body {
-    background-color: aliceblue;
+    background-color: #ebc3aa;
 }
+
 
 /* inicio del header */
 
@@ -159,8 +160,46 @@ header {
 
 
 /* ------------------------fin carousel--------- */
+.carousel {
+    margin: 15px auto;
+    padding: 10px auto;
+}
 
-.segunda-seccion {
+.container-margin {
+    margin: 100px;
+}
+.h2-primero, .h2-segundo{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.img.index {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.parrafo-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.parrafo-index {
+    font-family:'Fuzzy Bubbles', Times, serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.parrafo-index-ultimo {
+    margin: 10px;
+    padding: 5px;
+    font-family:'Fuzzy Bubbles', Times, serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+/* .segunda-seccion {
     margin-top: 15px;
 }
 .h1-home{
@@ -176,7 +215,7 @@ header {
 
             /* Comienzo de segunda seccion */
 
-.primer-div {
+/* .primer-div {
     display: flex;
     justify-content: center;
 }
@@ -204,7 +243,7 @@ header {
     font-size: 20px;
     margin: 5px 0;
     padding: 12px;
-}
+} */
 
             /* Fin de segunda seccion */
 
