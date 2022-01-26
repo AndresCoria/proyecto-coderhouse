@@ -61,6 +61,8 @@ header {
     transition: all 1s;
     box-shadow: 14px 10px 5px 0px rgba(0,0,0,0.75);
 }
+
+
 /* -------------media query tablet------------- */
 @media only screen and (max-width: 768px) {
     .div-logo-dos {
@@ -247,7 +249,7 @@ footer {
 /* ------------------------------Fin del Footer--------------------------- */
 /* ------------------------------Fin del index----------------------------- */
 /* ----------------------------- Inicio de Productos.html ----------------------------------- */
-#sarasa {
+.contenido {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -258,26 +260,37 @@ footer {
     height: 50%;
 }
 
+.img-productos:hover {
+    transform: translate(6px, 5%);
+    transition: all 1s;
+    box-shadow: 14px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
 .h1-productos {
     display: flex;
     justify-content: center;
     font-family:'Fuzzy Bubbles', Times, serif;
     font-size: 1.5rem;
     text-align: center;
-    margin: 0.5em;
+    margin: 10px;
+    padding: 10px;
 }
 
-.parrafo-uno-seccion-uno, .parrafo-dos-seccion-uno {
+.parrafo-productos {
+    font-family:'Fuzzy Bubbles', Times, serif;
+}
+
+/* .parrafo-uno-seccion-uno, .parrafo-dos-seccion-uno {
     margin: auto 15px;
-}
+} */
 
-.parrafo-uno-seccion-uno, .parrafo-dos-seccion-uno, .parrafo-descripcion {
+/* .parrafo-uno-seccion-uno, .parrafo-dos-seccion-uno, .parrafo-descripcion {
     display: flex;
     justify-content: center;
     font-family:'Fuzzy Bubbles', Times, serif;
     font-size: 1rem;
     line-height: 1.4em;
-}
+} */
 
 .parrafo-descripcion {
     padding: 10px 12px;
