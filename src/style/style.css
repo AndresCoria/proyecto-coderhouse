@@ -309,7 +309,8 @@ footer {
 
 /* ---------------------------------- Inicio Contacto.html ------------------------- */
 
-.seccion-uno-contacto {
+
+/* .seccion-uno-contacto {
     display: flex;
     justify-content: center;
 }
@@ -343,8 +344,10 @@ footer {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-}
-
+} */
+ .bg-color {
+    background-color: rgb(227, 172, 145);
+ }
 .seccion-tres-contacto {
     width: 75%;
     margin: auto;
