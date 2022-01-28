@@ -121,25 +121,23 @@ label {
 
 /* Inicio de secciones index */
 
-.carousel {
-    margin: 15px auto;
-    padding: 10px auto;
-}
-
-.container-margin {
-    margin: 100px;
+.carousel-item {
+    max-height: 350px;
 }
 
 .h2-primero,
 .h2-segundo {
     text-align: center;
     text-decoration: underline;
+    margin: 15px 0;
 }
 
-.img.index {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+
+.contenedor-img img {
+    border-radius: 10px;
+    box-shadow: 17px 18px 5px 2px rgba(10,6,6,0.64);
+    -webkit-box-shadow: 17px 18px 5px 2px rgba(10,6,6,0.64);
+    -moz-box-shadow: 17px 18px 5px 2px rgba(10,6,6,0.64);
 }
 
 .container-img-dos {
@@ -150,6 +148,10 @@ label {
 .image-index-dos {
     max-width: 50%;
     max-height: auto;
+    border-radius: 10px;
+    box-shadow: 17px 18px 5px 2px rgba(10,6,6,0.64);
+    -webkit-box-shadow: 17px 18px 5px 2px rgba(10,6,6,0.64);
+    -moz-box-shadow: 17px 18px 5px 2px rgba(10,6,6,0.64);
 }
 
 .parrafo-container {
@@ -161,6 +163,10 @@ label {
     font-family: "Fuzzy Bubbles", Times, serif;
     font-weight: bolder;
     font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 5px;
 }
 
 .parrafo-index-ultimo {
@@ -169,6 +175,14 @@ label {
     font-family: "Fuzzy Bubbles", Times, serif;
     font-weight: bolder;
     font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .parrafo-index-ultimo {
+        text-align: center;
+    }
 }
 
 /* Fin de secciones index */
@@ -309,9 +323,9 @@ footer {
 
 /* ---------------------------------- Inicio Contacto.html ------------------------- */
 
- .bg-color {
+.bg-color {
     background-color: rgb(227, 172, 145);
- }
+}
 .seccion-tres-contacto {
     width: 75%;
     margin: auto;
