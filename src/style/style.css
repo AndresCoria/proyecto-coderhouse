@@ -309,42 +309,6 @@ footer {
 
 /* ---------------------------------- Inicio Contacto.html ------------------------- */
 
-
-/* .seccion-uno-contacto {
-    display: flex;
-    justify-content: center;
-}
-
-.h1-contacto {
-    padding: 5px;
-    margin: 20px 0 20px 0;
-    text-decoration: underline;
-    font-family: "Fuzzy Bubbles", Times, serif;
-    font-size: 1.5em;
-}
-
-.div-contacto {
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    margin: auto;
-}
-
-.input,
-.textarea-uno {
-    width: 100%;
-    margin-bottom: 5%;
-}
-
-.textarea-uno {
-    padding-bottom: 40%;
-}
-
-.input-cuatro {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-} */
  .bg-color {
     background-color: rgb(227, 172, 145);
  }
