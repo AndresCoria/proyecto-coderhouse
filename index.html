@@ -15,33 +15,36 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
     <!-- CSS -->
     <link rel="stylesheet" href="src/style/style.css">
 
 </head>
 <body class="body-home">
-
     <header>
-        <div class="logo">
-            <a href="index.html"><img class="img-logo" src="src/images/logo-yowi.jpeg" alt="IMAGEN / LOGO DEL NEGOCIO"></a>
-        </div>
-        <nav class="nav-header">
-            <input class="input-header" type="checkbox" id="menu">
-            <label for="menu"><img src="src/images/icono-hamb.svg" alt="" width="50px" height="50px"></label>
-            <ul class="ul-header">
-                <li class="li-header"><a class="a-header" href="index.html">Inicio</a></li>
-                <li class="li-header"><a class="a-header" href="src/pages/productos.html">Productos</a></li>
-                <li class="li-header"><a class="a-header" href="src/pages/contacto.html">Contacto</a></li>
-                <li class="li-header"><a class="a-header" href="src/pages/sucursales.html">Sucursales</a></li>
-                <li class="li-header"><a class="a-header" href="src/pages/nosotros.html">Nosotros</a></li>
-            </ul>
-        </nav>
-        <div class="div-logo-dos">
-            <a href="index.html"><img class="img-logo-dos" src="src/images/logo-yowi.jpeg" alt="IMAGEN / LOGO DEL NEGOCIO"></a>
+        <div class="container-fluid bg-secondary">
+            <nav class="navbar navbar-expand-md navbar-light bg-secondary">
+                <div class="container-fluid">
+                    <div class="container-fluid w-50">
+                    <a href="index.html" class="navbar-brand logo-link">Panaderia NeleB</a>
+                    </div>
+                    <div class="container-fluid w-50 d-flex justify-content-end">
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div id="MenuNavegacion" class="collapse navbar-collapse menu-animacion">
+                        <ul class="navbar-nav ms-3">
+                            <li class="nav-item link-container"><a href="index.html" class="nav-link link-estilo">Inicio</a></li>
+                            <li class="nav-item link-container"><a href="./src/pages/productos.html" class="nav-link link-estilo">Productos</a></li>
+                            <li class="nav-item link-container"><a href="/src/pages/sucursales.html" class="nav-link link-estilo">Sucursales</a></li>
+                            <li class="nav-item link-container"><a href="/src/pages/nosotros.html" class="nav-link link-estilo">Nosotros</a></li>
+                            <li class="nav-item link-container"><a href="/src/pages/contacto.html" class="nav-link link-estilo">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
-
     <!-- CAROUSEL CON BOOTSTRAP-->
     <section class="carousel">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
@@ -62,8 +65,8 @@
     <!-- INCIO DE SECCIONES CON GRID SYSTEM -->
     <section class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12>
-                <h2 class="h2-primero">Nuestros Principales Productos</h2>
+            <div class="col-sm-12 text-container">
+                <h1 class="h1-index">Nuestros Principales Productos</h1>
             </div>
     </section>
 
@@ -105,6 +108,10 @@
         </div>
     </section>
 
+    <section class="container-parallax">
+
+    </section>
+
     <section class="container">
         <div class="row">
             <div class="col">
@@ -131,7 +138,7 @@
     </section>
 <!-- FIN DE SECCIONES CON GRID SYSTEM -->
 <!-- INICIO DE FOOTER CON GRID -->
-    <footer>
+    <footer class="bg-secondary">
         <section class="seccion-uno-footer">
             <div class="div-uno-footer">
                 <a class="icono-ig" href="https://www.instagram.com" target="_blank"><svg
@@ -163,14 +170,16 @@
             </div>
         </section>
 
-        <section class="seccion-tres-footer">
-            <ul class="ul-footer">
-                <li class="li-footer"><a class="a-footer" href="index.html">Inicio</a></li>
-                <li class="li-footer"><a class="a-footer" href="src/pages/productos.html">Productos</a></li>
-                <li class="li-footer"><a class="a-footer" href="src/pages/contacto.html">Contacto</a></li>
-                <li class="li-footer"><a class="a-footer" href="src/pages/sucursales.html">Sucursales</a></li>
-                <li class="li-footer"><a class="a-footer" href="src/pages/nosotros.html">Nosotros</a></li>
-            </ul>
+        <section class="seccion-tres-footer w-100">
+            <nav class="w-100">
+                <ul class="ul-footer">
+                    <li class="li-footer"><a class="a-footer" href="index.html">Inicio</a></li>
+                    <li class="li-footer"><a class="a-footer" href="src/pages/productos.html">Productos</a></li>
+                    <li class="li-footer"><a class="a-footer" href="src/pages/contacto.html">Contacto</a></li>
+                    <li class="li-footer"><a class="a-footer" href="src/pages/sucursales.html">Sucursales</a></li>
+                    <li class="li-footer"><a class="a-footer" href="src/pages/nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
         </section>
     </footer>
     <!-- FIN DEL FOOTER CON GRID -->
