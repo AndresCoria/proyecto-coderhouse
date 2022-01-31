@@ -1,0 +1,89 @@
+.margins-container {
+    margin: 100px;
+    padding: 5px;
+
+    @media only screen and (max-width: $tablet) {
+        margin: 10px;
+    }
+}
+
+.h1-sucursales {
+    text-align: center;
+    font-family: $font;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    @media only screen and (max-width: $tablet) {
+        font-size: 0.9em;
+    }
+}
+
+.container-h1 {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.img-sucursal {
+    width: 75%;
+    object-fit: cover;
+
+    &:hover {
+        opacity: 0;
+        transition: all 3s;
+    }
+
+    @media only screen and (max-width: $mobile) {
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.img-sucursal-dos {
+    position: absolute;
+    top: 2%;
+    right: 15%;
+    z-index: -1;
+    width: 70%;
+    object-fit: cover;
+    border-radius: 15%;
+
+    @media only screen and (max-width: $mobile) {
+        display: none;
+    }
+}
+
+.parrafo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafo-sucursales {
+    text-align: justify;
+    padding: 5px 12px;
+    margin: 10px 0;
+    color: black;
+    font-family: $font;
+    font-size: 1.5rem;
+    white-space: normal;
+    overflow: hidden;
+    width: 100%;
+
+    @media only screen and (max-width: $mobile) {
+        font-size: 1em;
+    }
+
+    @media only screen and (max-width: $tablet) {
+        text-align: center;
+        font-size: 0.8em;
+    }
+}

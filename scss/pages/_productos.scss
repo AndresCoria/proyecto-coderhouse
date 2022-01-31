@@ -1,0 +1,40 @@
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-productos {
+    width: 100%;
+    height: 50%;
+
+    &:hover {
+        transform: translate(6px, 5%);
+        transition: all 1s;
+        box-shadow: 14px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    @media only screen and (max-width: $tablet) {
+        justify-self: center;
+    }
+}
+
+.h1-productos {
+    display: flex;
+    justify-content: center;
+    font-family: $font;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.parrafo-productos {
+    font-family: $font;
+}
+
+.parrafo-descripcion {
+    padding: 10px 12px;
+    margin: 10px auto 10px auto;
+    text-align: center;
+}
