@@ -1,0 +1,49 @@
+footer {
+    display: grid;
+    grid-template-areas: "redes newsletter index";
+    background-color: rgb(163, 158, 139);
+    border-top: 1px solid black;
+}
+
+.seccion-uno-footer {
+    grid-area: redes;
+    align-self: center;
+}
+
+.div-uno-footer {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+
+.div-dos-footer {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: $tablet) {
+    footer {
+        display: grid;
+        grid-template-areas:
+            "redes"
+            "newsletter"
+            "index";
+        background-color: rgb(159, 151, 151);
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .div-uno-footer {
+        display: flex;
+        justify-content: center;
+        gap: 75px;
+    }
+
+    .ul-footer {
+        display: none;
+    }
+
+    .div-tres-footer p {
+        margin: 10px;
+    }
+}

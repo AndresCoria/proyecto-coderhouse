@@ -1,0 +1,96 @@
+.container-parallax {
+    position: relative;
+    background: url("../images/new-image/p3.jpg") no-repeat fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 500px;
+}
+
+@media screen and (max-width: $tablet) {
+    .link-container {
+        width: 20%;
+    }
+    l.link-container .link-estilo:hover {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: $mobile) {
+    .img-parallax {
+        display: none;
+    }
+
+}
+
+/* Inicio de secciones index */
+
+.carousel-item {
+    max-height: 350px;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    
+}
+.h1-index,
+.h2-segundo {
+    text-align: center;
+    text-decoration: underline;
+    margin: 15px 0;
+    font-family: $font;
+}
+
+
+.contenedor-img img {
+    border-radius: 10px;
+    box-shadow: 17px 18px 5px 2px rgba(10,6,6,0.64);
+    -webkit-box-shadow: 17px 18px 5px 2px rgba(10,6,6,0.64);
+    -moz-box-shadow: 17px 18px 5px 2px rgba(10,6,6,0.64);
+}
+
+.container-img-dos {
+    display: flex;
+    justify-content: center;
+}
+
+.image-index-dos {
+    max-width: 50%;
+    max-height: auto;
+    border-radius: 10px;
+    box-shadow: 17px 18px 5px 2px rgba(10,6,6,0.64);
+    -webkit-box-shadow: 17px 18px 5px 2px rgba(10,6,6,0.64);
+    -moz-box-shadow: 17px 18px 5px 2px rgba(10,6,6,0.64);
+}
+
+.parrafo-container {
+    display: flex;
+    align-items: center;
+}
+
+.parrafo-index {
+    font-family: $font;
+    font-weight: bolder;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 5px;
+}
+
+.parrafo-index-ultimo {
+    margin: 10px;
+    padding: 5px;
+    font-family: $font;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+
+    @media screen and (max-width: $mobile) {
+        text-align: center;
+    }
+}
