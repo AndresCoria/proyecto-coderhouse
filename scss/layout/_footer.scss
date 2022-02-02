@@ -1,29 +1,55 @@
 footer {
     display: grid;
     grid-template-areas: "redes newsletter index";
-    background-color: rgb(163, 158, 139);
+    background-color: #a39e8b;
     border-top: 1px solid black;
 }
-
 .seccion-uno-footer {
     grid-area: redes;
     align-self: center;
 }
-
 .div-uno-footer {
     display: flex;
     justify-content: center;
     gap: 75px;
 }
-
 .div-dos-footer {
     display: flex;
     justify-content: center;
 }
-
+.seccion-dos-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div-footer {
+    display: flex;
+    justify-content: center;
+}
 .div-tres-footer {
     display: flex;
     justify-content: center;
+}
+.li-footer {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.a-footer {
+    font-family: $font;
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+    margin: 1px 0px;
+    color: black;
+
+    &:hover {
+        color: black;
+        transform: scale() (6px, 5%);
+        transition: all 1s;
+        border-radius: 5px;
+        box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.6);
+    }
 }
 
 @media screen and (max-width: $tablet) {
