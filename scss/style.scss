@@ -1,10 +1,10 @@
-@import "./base/_variables.scss";
+@import "./base/_variables";
 
-@import "./layout/_header.scss";
-@import "./layout/_footer.scss";
+@import "./layout/_header";
+@import "./layout/_footer";
 
-@import "./pages/index.scss";
-@import "./pages/productos.scss";
-@import "./pages/sucursales.scss";
-@import "./pages/contacto.scss";
-@import "./pages/nosotros.scss";
+@import "./pages/index";
+@import "./pages/productos";
+@import "./pages/sucursales";
+@import "./pages/contacto";
+@import "./pages/nosotros";
