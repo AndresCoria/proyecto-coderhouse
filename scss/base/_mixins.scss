@@ -1,0 +1,10 @@
+
+@mixin alineacion($display, $justify) {
+    display: $display;
+    justify-content: $justify;
+}
+
+@mixin espaciado($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}

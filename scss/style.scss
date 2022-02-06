@@ -1,7 +1,9 @@
-@import "./base/_variables";
+@import "./base/variables";
+@import './base/extends';
+@import './base/mixins';
 
-@import "./layout/_header";
-@import "./layout/_footer";
+@import "./layout/header";
+@import "./layout/footer";
 
 @import "./pages/index";
 @import "./pages/productos";

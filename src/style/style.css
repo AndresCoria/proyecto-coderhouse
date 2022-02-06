@@ -1,3 +1,8 @@
+.seccion-dos-nosotros .div-uno-nosotros, .seccion-tres-contacto .div-dos-seccion-tres, .seccion-tres-contacto .div-seccion-tres .h2-contacto, .margins-container div, .margins-container div .img-container, .contenido, .container div h1, .container-margin div .container-img-dos, section .text-container {
+  display: flex;
+  justify-content: center;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -93,6 +98,38 @@ footer .seccion-tres-footer nav .ul-footer li a:hover {
   }
 }
 
+/* Index.html */
+.carousel-item {
+  max-height: 350px;
+}
+
+section .text-container h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 15px 0;
+  font-family: "Fuzzy Bubbles", Times, serif;
+}
+
+.container-margin .contenedor-img img {
+  border-radius: 10px;
+  box-shadow: 17px 18px 5px 2px rgba(10, 6, 6, 0.64);
+  -webkit-box-shadow: 17px 18px 5px 2px rgba(10, 6, 6, 0.64);
+  -moz-box-shadow: 17px 18px 5px 2px rgba(10, 6, 6, 0.64);
+}
+.container-margin .parrafo-container {
+  display: flex;
+  justify-content: center;
+}
+.container-margin .parrafo-container p {
+  font-family: "Fuzzy Bubbles", Times, serif;
+  font-weight: bolder;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 5px;
+}
+
 .container-parallax {
   position: relative;
   background: url("../images/new-image/p3.jpg") no-repeat fixed;
@@ -103,53 +140,20 @@ footer .seccion-tres-footer nav .ul-footer li a:hover {
   background-size: cover;
   min-height: 500px;
 }
-
-@media screen and (max-width: 768px) {
-  .link-container {
-    width: 20%;
-  }
-
-  l.link-container .link-estilo:hover {
-    width: 100%;
-    text-align: center;
-  }
-}
 @media screen and (max-width: 480px) {
-  .img-parallax {
+  .container-parallax {
     display: none;
   }
 }
-/* Inicio de secciones index */
-.carousel-item {
-  max-height: 350px;
-}
 
-.text-container {
-  display: flex;
-  justify-content: center;
-}
-
-.h1-index,
-.h2-segundo {
+.container div div h2 {
   text-align: center;
   text-decoration: underline;
   margin: 15px 0;
   font-family: "Fuzzy Bubbles", Times, serif;
 }
 
-.contenedor-img img {
-  border-radius: 10px;
-  box-shadow: 17px 18px 5px 2px rgba(10, 6, 6, 0.64);
-  -webkit-box-shadow: 17px 18px 5px 2px rgba(10, 6, 6, 0.64);
-  -moz-box-shadow: 17px 18px 5px 2px rgba(10, 6, 6, 0.64);
-}
-
-.container-img-dos {
-  display: flex;
-  justify-content: center;
-}
-
-.image-index-dos {
+.container-margin div .container-img-dos .image-index-dos {
   max-width: 50%;
   max-height: auto;
   border-radius: 10px;
@@ -157,23 +161,7 @@ footer .seccion-tres-footer nav .ul-footer li a:hover {
   -webkit-box-shadow: 17px 18px 5px 2px rgba(10, 6, 6, 0.64);
   -moz-box-shadow: 17px 18px 5px 2px rgba(10, 6, 6, 0.64);
 }
-
-.parrafo-container {
-  display: flex;
-  align-items: center;
-}
-
-.parrafo-index {
-  font-family: "Fuzzy Bubbles", Times, serif;
-  font-weight: bolder;
-  font-size: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
-  padding: 5px;
-}
-
-.parrafo-index-ultimo {
+.container-margin div div .parrafo-index-ultimo {
   margin: 10px;
   padding: 5px;
   font-family: "Fuzzy Bubbles", Times, serif;
@@ -183,53 +171,50 @@ footer .seccion-tres-footer nav .ul-footer li a:hover {
   width: 100%;
 }
 @media screen and (max-width: 480px) {
-  .parrafo-index-ultimo {
+  .container-margin div div .parrafo-index-ultimo {
     text-align: center;
   }
 }
 
-.contenido {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* Productos.html */
+.container div h1 {
+  font-family: "Fuzzy Bubbles", Times, serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 50px 0 0 0;
+  padding: 10px;
+}
+.container div p {
+  font-family: "Fuzzy Bubbles", Times, serif;
 }
 
-.img-productos {
+.contenido {
+  flex-direction: column;
+}
+.contenido img {
   width: 100%;
   height: 50%;
 }
-.img-productos:hover {
+.contenido img:hover {
   transform: translate(6px, 5%);
   transition: all 1s;
   box-shadow: 14px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 @media only screen and (max-width: 768px) {
-  .img-productos {
+  .contenido img {
     justify-self: center;
   }
 }
-
-.h1-productos {
-  display: flex;
-  justify-content: center;
-  font-family: "Fuzzy Bubbles", Times, serif;
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 50px;
-  padding: 10px;
-}
-
-.parrafo-productos {
-  font-family: "Fuzzy Bubbles", Times, serif;
-}
-
-.parrafo-descripcion {
+.contenido p {
+  margin: 10px auto;
   padding: 10px 12px;
-  margin: 10px auto 10px auto;
   text-align: center;
 }
 
+/* Sucursales.html */
 .margins-container {
+  margin: 100px;
+  padding: 5px;
   margin: 100px;
   padding: 5px;
 }
@@ -238,46 +223,39 @@ footer .seccion-tres-footer nav .ul-footer li a:hover {
     margin: 10px;
   }
 }
-
-.h1-sucursales {
+.margins-container div .container-h1 {
+  margin: 0 0 15px 0;
+  padding: 0 0 5px 0;
+}
+.margins-container div .container-h1 h1 {
   text-align: center;
   font-family: "Fuzzy Bubbles", Times, serif;
 }
-.h1-sucursales:hover {
+.margins-container div .container-h1 h1:hover {
   text-decoration: underline;
 }
 @media only screen and (max-width: 768px) {
-  .h1-sucursales {
+  .margins-container div .container-h1 h1 {
     font-size: 0.9em;
   }
 }
-
-.container-h1 {
-  margin-bottom: 15px;
-  padding-bottom: 5px;
-}
-
-.img-container {
-  display: flex;
-  justify-content: center;
+.margins-container div .img-container {
   position: relative;
 }
-
-.img-sucursal {
+.margins-container div .img-container img {
   width: 75%;
   object-fit: cover;
 }
-.img-sucursal:hover {
+.margins-container div .img-container img:hover {
   opacity: 0;
   transition: all 3s;
 }
 @media only screen and (max-width: 480px) {
-  .img-sucursal:hover {
+  .margins-container div .img-container img:hover {
     opacity: 1;
   }
 }
-
-.img-sucursal-dos {
+.margins-container div .img-container div img {
   position: absolute;
   top: 2%;
   right: 15%;
@@ -287,21 +265,17 @@ footer .seccion-tres-footer nav .ul-footer li a:hover {
   border-radius: 15%;
 }
 @media only screen and (max-width: 480px) {
-  .img-sucursal-dos {
+  .margins-container div .img-container div img {
     display: none;
   }
 }
-
-.parrafo-container {
-  display: flex;
-  justify-content: center;
+.margins-container div {
   align-items: center;
 }
-
-.parrafo-sucursales {
+.margins-container div p {
   text-align: justify;
-  padding: 5px 12px;
   margin: 10px 0;
+  padding: 5px 12px;
   color: black;
   font-family: "Fuzzy Bubbles", Times, serif;
   font-size: 1.5rem;
@@ -310,12 +284,12 @@ footer .seccion-tres-footer nav .ul-footer li a:hover {
   width: 100%;
 }
 @media only screen and (max-width: 480px) {
-  .parrafo-sucursales {
+  .margins-container div p {
     font-size: 1em;
   }
 }
 @media only screen and (max-width: 768px) {
-  .parrafo-sucursales {
+  .margins-container div p {
     text-align: center;
     font-size: 0.8em;
   }
@@ -325,28 +299,23 @@ footer .seccion-tres-footer nav .ul-footer li a:hover {
   width: 75%;
   margin: auto;
 }
-
-.div-dos-seccion-tres {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2%;
-}
-
-.h2-contacto {
-  display: flex;
-  justify-content: center;
+.seccion-tres-contacto .div-seccion-tres .h2-contacto {
   font-family: "Fuzzy Bubbles", Times, serif;
   font-size: 1.5em;
-  padding: 2% 0;
   margin: 2% 0;
+  padding: 2% 0;
 }
-
 @media only screen and (max-width: 768px) {
-  .h1-contacto, .h2-contacto {
+  .seccion-tres-contacto .div-seccion-tres .h2-contacto .h1-contacto, .seccion-tres-contacto .div-seccion-tres .h2-contacto .h2-contacto {
     font-size: 1.2em;
     text-align: center;
   }
 }
+.seccion-tres-contacto .div-dos-seccion-tres {
+  margin-bottom: 2%;
+}
+
+/* nosotros.html */
 .slider {
   width: 95%;
   margin: auto;
@@ -358,11 +327,13 @@ footer .seccion-tres-footer nav .ul-footer li a:hover {
   width: 400%;
   animation: cambio 20s infinite alternate linear;
 }
-.slider li {
+.slider ul li {
   width: 100%;
   list-style: none;
 }
-.slider img {
+.slider ul li img {
+  width: 23%;
+  height: 250px;
   width: 100%;
   object-fit: cover;
 }
@@ -393,59 +364,38 @@ footer .seccion-tres-footer nav .ul-footer li a:hover {
     margin-left: -300%;
   }
 }
-.img-uno-carusel,
-.img-dos-carusel,
-.img-tres-carusel,
-.img-cuatro-carusel {
-  width: 23%;
-  height: 250px;
-}
-
 /* ------------------------fin carousel--------- */
-.div-uno-nosotros {
-  display: flex;
-  justify-content: center;
-}
-
-.h1-nosotros {
+.seccion-dos-nosotros .div-uno-nosotros h1 {
   text-decoration: underline;
   padding: 1%;
   font-family: "Fuzzy Bubbles", Times, serif;
 }
-
-.parrafo-nosotros-uno,
-.parrafo-nosotros-dos,
-.parrafo-nosotros-tres {
+.seccion-dos-nosotros .div-dos-nosotros p {
   font-size: 1em;
-  padding: 10px 12px;
   margin: 1%;
+  padding: 10px 12px;
   line-height: 1.2em;
   font-family: "Fuzzy Bubbles", Times, serif;
 }
 
-.seccion-tres-sucursales {
+.seccion-tres-nosotros {
   display: flex;
   justify-content: space-around;
 }
 @media screen and (max-width: 768px) {
-  .seccion-tres-sucursales {
+  .seccion-tres-nosotros {
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
 }
-
-.img-uno,
-.img-dos,
-.img-tres {
+.seccion-tres-nosotros img {
   width: 19%;
   height: 250px;
   margin-bottom: 2%;
 }
 @media screen and (max-width: 768px) {
-  .img-uno,
-.img-dos,
-.img-tres {
+  .seccion-tres-nosotros img {
     width: 70%;
     height: 250px;
     margin-bottom: 2%;
