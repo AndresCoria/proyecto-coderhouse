@@ -26,6 +26,7 @@ section {
     }
     .parrafo-container {
         @include alineacion(flex, center);
+        align-items: center;
         p {
             font-family: $font;
             font-weight: bolder;

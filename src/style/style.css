@@ -50,9 +50,13 @@ footer .seccion-dos-footer {
   flex-direction: column;
   justify-content: center;
 }
-footer .seccion-dos-footer .div-footer {
+footer .seccion-dos-footer .div-footer form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+footer .seccion-dos-footer .div-footer form input {
+  text-align: center;
 }
 footer .seccion-dos-footer .div-tres-footer {
   display: flex;
@@ -121,6 +125,7 @@ section .text-container h1 {
 .container-margin .parrafo-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .container-margin .parrafo-container p {
   font-family: "Fuzzy Bubbles", Times, serif;

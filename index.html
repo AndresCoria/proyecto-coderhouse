@@ -27,11 +27,11 @@
         <div class="container-fluid bg-secondary">
             <nav class="navbar navbar-expand-md navbar-light bg-secondary">
                 <div class="container-fluid">
-                    <div class="container-fluid w-50">
+                    <div class="container-fluid w-50 container-logo">
                         <a href="index.html" class="navbar-brand logo-link">Panaderia NeleB</a>
                     </div>
                     <div class="container-fluid w-50 d-flex justify-content-end">
-                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                        <button type="button" aria-label="button menu" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                     </div>
@@ -157,12 +157,10 @@
         <section class="seccion-dos-footer">
             <div class="div-footer">
                 <form>
-                    <input type="mail" required="">
-                    <input type="submit">
+                    <input id="correo" type="mail" required="">
+                    <label for="correo">Suscribete a nuestro Newsletter</label>
+                    <button class="btn btn-primary">Enviar</button>
                 </form>
-            </div>
-            <div class="div-tres-footer">
-            <p>Suscribete a nuestro Newsletter</p>
             </div>
         </section>
         <section class="seccion-tres-footer w-100">

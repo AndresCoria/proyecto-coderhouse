@@ -26,10 +26,18 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
         .div-footer {
-            display: flex;
-            justify-content: center;
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                input {
+                    text-align: center;
+                }
+            }
         }
+
         .div-tres-footer {
             display: flex;
             justify-content: center;
