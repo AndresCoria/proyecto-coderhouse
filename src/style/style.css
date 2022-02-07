@@ -1,4 +1,4 @@
-.seccion-dos-nosotros .div-uno-nosotros, .seccion-tres-contacto .div-dos-seccion-tres, .seccion-tres-contacto .div-seccion-tres .h2-contacto, .margins-container div, .margins-container div .img-container, .contenido, .container div h1, .container-margin div .container-img-dos, section .text-container {
+.seccion-dos-nosotros .div-uno-nosotros, .seccion-tres-contacto .div-dos-seccion-tres, .seccion-tres-contacto .div-seccion-tres .h2-contacto, .margins-container div, .margins-container div .img-container, .contenido, .container-section div h1, .container-margin div .container-img-dos, section .text-container {
   display: flex;
   justify-content: center;
 }
@@ -179,14 +179,14 @@ section .text-container h1 {
 }
 
 /* Productos.html */
-.container div h1 {
+.container-section div h1 {
   font-family: "Fuzzy Bubbles", Times, serif;
   font-size: 1.5rem;
   text-align: center;
   margin: 50px 0 0 0;
   padding: 10px;
 }
-.container div p {
+.container-section div p {
   font-family: "Fuzzy Bubbles", Times, serif;
 }
 
